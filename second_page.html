@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="assets/images/ew_logo.png" alt="logo" id="header-img"></a>
+        </div>
+
+        <div class="search-container">
+            <form action="#">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <nav id="nav-bar">
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="page-container">
+            <div class="success-row">
+                <div class="success-col">
+                    <img src="assets/images/check.gif"/>
+                    <h1>THANK YOU FOR SUBSCRIBING!</h1>
+                    <p>Your email <span data-email></span> has been successfully subscribed to our newsletter.</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer id="contact">
+    <div class="footer">
+        <h3>Get special offers from Electroworld</h3>
+        <div class="form">
+            <form action="second_page.html">
+                <label for="email"></label>
+                <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required>
+                <button class="submit" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+        <div class="container2">
+            <div class="help">
+                <h4>HELP CENTER</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Buyer's Guide</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Warranty</li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>CONNECT WITH US</h4>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Viber Community</li>
+                    <li>Store Directory</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h4>ABOUT ELECTROWORLD</h4>
+                <ul>
+                    <li>Why Shop At Electroworld</li>
+                    <li>Store Locator</li>
+                    <li>Business Solutions</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>CONTACT US</h4>
+                <ul>
+                    <li>(02) 8811 8811</li>
+                    <li>09178799483</li>
+                    <li>09178799483</li>
+                    <li>09209328523</li>
+                    <li>(02) 8248 3255</li>
+                </ul>
+            </div>
+        </div>
+        <p id="copyright">Copyright &#169 2022 - Product Landing Page</p>
+</footer>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/forms.js"></script>
+</html>

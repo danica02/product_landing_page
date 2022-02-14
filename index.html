@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header id="header">
@@ -29,15 +28,15 @@
             </div>
             <ul id="nav-lists">
                 <li class="close"><span onclick="Hide()">×</span></li>
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Products</a></li>
-                <li><a class="nav-link" href="#">Contact</a></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section>
+    <section id="home">
         <div id="video">
             <img class="mySlides" src="assets/images/banner1.png">
             <img class="mySlides" src="assets/images/banner5.png">
@@ -54,35 +53,37 @@
         </p>
     </section>  
     
-    <section>
+    <section id="about">
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <b> ABOUT </b>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+
         <div class="container">
             <div class="box box-shadow-hover pointer">
                 <img class="img img-icon" src="assets/images/mobile.png">
                 <h2>Mobiles</h2>
-                <p>Awesome smartphones that would perfectly fit your pocket.</p>
             </div>
 
             <div class="box box-shadow-hover pointer">
                 <img class="img-icon" src="assets/images/computer.png">
                 <h2>Computers</h2>
-                <p>The ideal laptop for many students and modern-way working prefessionals. </p>
             </div>
 
             <div class="box box-shadow-hover pointer">
                 <img class="img-icon" src="assets/images/accessories.png">
                 <h2>Accessories</h2>
-                <p>Get the right beat to accompany you for the whole year.</p>
             </div>
 
             <div class="box box-shadow-hover pointer">
                 <img class="img-icon" src="assets/images/printer.png">
                 <h2>Printers</h2>
-                <p>Upgrade your printer today and keep your productivity high.</p>
             </div>
         </div>
-    </section>
 
-    <section>
         <div class="container_two">
             <div class="wrapper">
                 <div class="box_2">
@@ -131,31 +132,110 @@
             </div>
         </div>
     </section>
+
+    <section id="products">
+        <div class="reco">
+            <h2>RECOMMEND ITEMS</h2>
+            <a href="#"><h5>SEE ALL</h5></a>
+        </div>
+        <div class="container3">
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco1.jpg">
+                <h5>EPSON ECOTANK MONOCHROME M3170</h5>
+                <p>Wi-Fi Duplex All-in-One Ink Tank Printer with ADF</p>
+                <h5>₱ 67,996</h5>
+            </div>
+
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco2.jpg">
+                <h5>JBL TUNE PRO ALPHA USB BLACK</h5>
+                <p>Noise Isolating Amplified Wired Gaming Headset</p>
+                <h5>₱ 2,799</h5>
+            </div>
+
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco3.jpg">
+                <h5>ACER NITRO 5 AN515 57 5620 BLACK</h5>
+                <p>15.6-inch Full HD, Intel-Core i5-114000H, 8GB</p>
+                <h5>₱ 47,499</h5>
+            </div>
+
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco4.jpg">
+                <h5>SAMSUNG GALAXY S22 ULTRA (12GB + 256GB)</h5>
+                <p>Pre-Order I 6.8-inch Quad HD + Snapdragon 895, 256GB, 5000mAh</p>
+                <h5>₱ 72,990</h5>
+            </div>
+
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco5.jpg">
+                <h5>JBL FLIP 5 ECO EDITION BLACK</h5>
+                <p>Waterproof Portable Bluetooth Speaker</p>
+                <h5>₱ 23,999</h5>
+            </div>
+
+            <div class="box1 box-hover pointer">
+                <img class="reco-img" src="assets/images/reco6.jpg">
+                <h5>SAMSUNG GALAXY TABS8 WI-FI PINK GOLD</h5>
+                <p>Pre-Order | 11-inch, Snapdragon 8 Gen 1,</p>
+                <h5>₱ 41,990</h5>
+            </div>
+        </div>
+    </section>
 </body>
-<script>
-    var navList = document.getElementById("nav-lists");
-    function Show() {
-    navList.classList.add("_Menus-show");
-    }
-    
-    function Hide(){
-    navList.classList.remove("_Menus-show");
-    }
 
-    // To make banner image autoslides
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-    }
-</script>
+<footer id="contact">
+    <div class="footer">
+        <h3>Get special offers from Electroworld</h3>
+        <div class="form">
+            <form action="second_page.html" method="get">
+                <label for="email"></label>
+                <input type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required>
+                <button class="submit" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+        <div class="container2">
+            <div class="help">
+                <h4>HELP CENTER</h4>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Buyer's Guide</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Warranty</li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h4>CONNECT WITH US</h4>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Viber Community</li>
+                    <li>Store Directory</li>
+                </ul>
+            </div>
+            <div class="about">
+                <h4>ABOUT ELECTROWORLD</h4>
+                <ul>
+                    <li>Why Shop At Electroworld</li>
+                    <li>Store Locator</li>
+                    <li>Business Solutions</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>CONTACT US</h4>
+                <ul>
+                    <li>(02) 8811 8811</li>
+                    <li>09178799483</li>
+                    <li>09178799483</li>
+                    <li>09209328523</li>
+                    <li>(02) 8248 3255</li>
+                </ul>
+            </div>
+        </div>
+        <p id="copyright">Copyright &#169 2022 - Product Landing Page</p>
+</footer>
+<script src="assets/js/scripts.js"></script>
 </html>
